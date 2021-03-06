@@ -29,7 +29,7 @@ export default function Home(props) {
     >
       <div className={styles.container}>
         <Head>
-          <title>Início | Moveit Next</title>
+          <title>Início | Move Yourself</title>
         </Head>
 
         <ExperienceBar />

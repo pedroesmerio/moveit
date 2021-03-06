@@ -108,3 +108,14 @@
 .challengeNotActive img {
   margin-bottom: 1rem;
 }
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .challengeActive main img {
+    margin: 1.5rem;
+    box-sizing: content-box;
+  }
+  .challengeActive main p {
+    margin-bottom: 1.5rem;
+  }
+}

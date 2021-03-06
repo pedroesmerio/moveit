@@ -1,0 +1,42 @@
+.container section {
+  top: 5rem;
+  bottom: 5rem;
+  left: -0.5rem;
+  height: 100vh;
+
+  background: var(--blue);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > section img {
+  flex-grow: 0.3;
+}
+
+.container > section div {
+  flex-grow: 0.15;
+}
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+  .container section {
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(rgba(73, 83, 184, 0.9) 50%, var(--blue) 100%);
+  }
+  .loginImg {
+    display: none;
+  }
+
+  .container > section div {
+    flex-grow: 1;
+  }
+
+  .container > section div {
+    width: 100vw;
+  }
+}
