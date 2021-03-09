@@ -24,7 +24,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
 
   //STATES
   //Regista a constante tempo como 25min dado em segundo;
-  const [time, setTime] = useState(0.5 * 60);
+  const [time, setTime] = useState(0.05 * 60);
   //Registra o state do startCountdown como false;
   const [isActive, setIsActive] = useState(false);
   //Registra o state do hasFinished o Countdown como false;
@@ -65,7 +65,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
     clearTimeout(countdownTimeout);
     setIsActive(false);
     setHasFinished(false);
-    setTime(0.5 * 60);
+    setTime(0.05 * 60);
   }
 
   return (

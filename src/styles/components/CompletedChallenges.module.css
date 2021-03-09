@@ -11,7 +11,7 @@
 }
 
 .completedChallengesContainer span:first-child {
-  font-size: 1.CompletedChallenges;
+  font-size: 1.5rem;
 }
 
 .completedChallengesContainer span:last-child {
