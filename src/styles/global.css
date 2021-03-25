@@ -12,7 +12,9 @@
   --text-highlight: #B3B9FF;
   --title: #2E384D;
   --red: #E83F5B;
+  --red-glass: #FFF5F5;
   --green: #4CD62B;
+  --green-glass: #F7FFF5;
   --blue: #5965E0;
   --blue-dark: #4953B8;
   --blue-twitter: #2AA9E0;
@@ -41,6 +43,10 @@ body, input, textarea, button {
 
 button {
   cursor: pointer;
+}
+
+input , button:focus {
+  outline: none;
 }
 
 a {

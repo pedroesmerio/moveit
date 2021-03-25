@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
     "js-cookie": "^2.2.1",
     "next": "10.0.7",
+    "prettier": "^2.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },

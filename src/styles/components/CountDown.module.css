@@ -39,7 +39,6 @@
   position: relative;
 }
 
-
 /*Button*/
 .countdownButton {
   width: 100%;
@@ -50,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   border: 0;
   border-radius: 5px;
 
@@ -68,18 +67,35 @@
 }
 
 .countdownButtonActive {
-  background: var(--red);
-  color: var(--white)
+  height: 75px;
+  border-radius: 5px 5px 0px 0px;
+
+  background: var(--white);
+  color: var(--text);
+}
+
+.progressBarButton {
+  margin-top: 0;
+  height: 5px;
+  background: var(--gray-line);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.progressBarButton > div {
+  height: 5px;
+  background: var(--green);
+  border-radius: 0px 0px 5px 5px;
+  transition: width 0.4s;
 }
 
 .countdownButtonActive:not(:disabled):hover {
   background: var(--white);
-  color: var(--title)
+  color: var(--title);
 }
 
 .countdownButton:disabled {
   background: var(--white);
-  border-bottom-width: 4px;
+  border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: var(--green);
   color: var(--text);

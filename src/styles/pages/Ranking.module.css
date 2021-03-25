@@ -15,13 +15,45 @@
   flex-direction: column;
 }
 
-.container section {
+.container > section {
   flex: 1;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6.25rem;
+  grid-template-rows: auto auto auto auto;
+  gap: 2px 5.25rem;
   align-content: center;
+}
+
+.container section strong {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.25rem;
+  line-height: 2.87rem;
+  color: var(--title);
+
+  margin-bottom: 4rem;
+}
+
+/*RANKING CARDS*/
+.cardsContainer {
+  width: 884px;
+  height: 6rem;
+
+  margin-top: 2rem;
+  background: var(--white);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.cardsContainer div:first-child {
+  width: 5rem;
+}
+
+.userContainer {
 }
 
 /* mobile */
