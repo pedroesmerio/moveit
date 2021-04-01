@@ -1,0 +1,75 @@
+.outsideContainer {
+  display: flex;
+  flex-direction: row;
+  order: 1;
+}
+
+.container {
+  order: 2;
+
+  height: 100vh;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > section {
+  flex: 1;
+
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 2px 5.25rem;
+  align-content: center;
+}
+
+.container section strong {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.25rem;
+  line-height: 2.87rem;
+  color: var(--title);
+
+  margin-bottom: 4rem;
+}
+
+/*RANKING CARDS*/
+.cardsContainer {
+  width: 884px;
+  height: 6rem;
+
+  margin-top: 2rem;
+  background: var(--white);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.cardsContainer div:first-child {
+  width: 5rem;
+}
+
+.userContainer {
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+  }
+}

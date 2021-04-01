@@ -1,0 +1,174 @@
+.loginContainer {
+  height: 480px;
+  width: 468px;
+  border-radius: 4px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  justify-self: center;
+  align-self: center;
+}
+
+.loginContainer img {
+  width: 22.5rem;
+}
+
+.loginContainer strong {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.87rem;
+  color: var(--white);
+}
+
+.inputContainer {
+  width: 19.8rem;
+  height: 3.75rem;
+
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.inputContainer div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+
+  width: 19.8rem;
+  height: 3.75rem;
+}
+
+.inputContainer div img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.inputContainer div p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.87rem;
+  color: var(--text-highlight);
+  text-align: left;
+
+  width: 15.8rem;
+}
+
+.inputContainer form {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputContainer form input {
+  text-align: left;
+  padding-left: 2.5rem;
+  background: linear-gradient(
+    90deg,
+    var(--blue-dark) 0%,
+    rgba(73, 83, 184, 0.2) 100%
+  );
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.87rem;
+  color: var(text-highlight);
+
+  max-width: 21.25rem;
+  height: 5rem;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+}
+
+.inputContainer form > input:focus {
+  border: 2px solid var(--green);
+  filter: brightness(1.5);
+  transition: filter 0.7s;
+  transition: border 0.7s;
+}
+
+.inputContainer form > button {
+  width: 5rem;
+  height: 5rem;
+  background: var(--blue-dark);
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+}
+
+.inputContainer form > button > img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.inputContainer form > button:hover {
+  background: var(--green);
+  transition: background 0.9s;
+}
+
+/* mobile */
+@media only screen and (max-width: 720px) {
+  .loginContainer {
+    grid-template-rows: 1fr 0.3fr 2fr;
+    gap: 2rem;
+    height: 500px;
+    width: 100vw;
+  }
+
+  .loginContainer img {
+    width: 18rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .loginContainer strong {
+    font-size: 1.8rem;
+    justify-self: center;
+  }
+
+  .loginContainer div p {
+    font-size: 0.8rem;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .inputContainer {
+    width: 100vw;
+    height: 70%;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inputContainer div {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .inputContainer div p {
+    justify-self: center;
+    font-size: 1.2rem;
+  }
+
+  .inputContainer form {
+    justify-self: center;
+  }
+
+  .inputContainer form input {
+    min-width: 21.25rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .inputContainer form > button {
+    min-width: 5rem;
+    min-height: 5rem;
+  }
+}
