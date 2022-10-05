@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect, useContext, ReactNode } from 'react';
-import { ChallengesContext } from '../contexts/ChallengesContext.tsx';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 
 interface CountdownProviderProps {
   children: ReactNode;
@@ -24,7 +24,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
 
   //STATES
   //Regista a constante tempo como 25min dado em segundo;
-  const [time, setTime] = useState(0.05 * 60);
+  const [time, setTime] = useState(1 * 60);
   //Registra o state do startCountdown como false;
   const [isActive, setIsActive] = useState(false);
   //Registra o state do hasFinished o Countdown como false;
@@ -40,7 +40,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
       }, 1000)
     } else if (isActive && time === 0) {
       setHasFinished(true);
-      setTimeout(false);
+      setIsActive(false);
       startNewChallenge();
     }
   }, [isActive, time]);
@@ -65,7 +65,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
     clearTimeout(countdownTimeout);
     setIsActive(false);
     setHasFinished(false);
-    setTime(0.05 * 60);
+    setTime(1 * 60);
   }
 
   return (
